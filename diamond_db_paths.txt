@@ -1,0 +1,15 @@
+# Summary: paths to diamond formatted blast databases 
+# (tested with DIAMOND v2.1.9)
+#
+# Instructions: add the database name and path to the database file 
+# as in the examples below. For annotations to be carried over by DiMER either 
+# blast_and_hmm_key.tsv must include the annotation info. Note, the database
+# name must exatly match the one given in the first column of blast_and_hmm_key.tsv 
+# for the annotations in the file to be recognized.
+#
+#Include Paths Below:
+###################################################################################
+
+mobileOG=./Databases/MobileOG/mobileOG_db.dmnd
+VFDB=./Databases/VFDB/VFDB_setB_pro.dmnd
+ICEberg=./Databases/ICEberg3/ICEberg3_All_ETedit.dmnd

@@ -1,0 +1,18 @@
+# List of placeolder annotations:
+# Case insensitive but proper spelling, punctuation, and spacing is necessary
+# Leave no row blank! Cases of NA and NaN are already handled.
+# Make sure to edit this file and other DiMER files
+# only in a plain text editor and not in programs 
+# like Microsoft Word to avoid introducing erroneous 
+# end-of-line (EOL) characters accidentally. Not using a 
+# plain text editor may cause hard-to-trace bugs and 
+# potentially software inoperability.
+hypothetical protein
+unnamed protein product
+unknown function
+unknown protein
+putative protein
+unannotated protein
+uncharacterized protein
+uncharacterized conserved protein
+No Matches to Sequence Found

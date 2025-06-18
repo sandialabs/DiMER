@@ -1,0 +1,25 @@
+# Summary: paths to hmmer3 formatted blast databases for use with DiMER 
+# (tested with HMMER v3.4)
+#
+# Instructions: add the database name and path to the database file 
+# as in the examples below. For annotations to be carried over by DiMER either 
+# the DESC value in the hmm file must be populated or blast_and_hmm_key.tsv must 
+# include the annotation info. Note: the database name must exatly match the 
+# one given in the first column of blast_and_hmm_key.tsv for the annotations 
+# given in the tsv file to be recognized.
+#
+#Include Paths Below:
+###################################################################################
+
+Padloc=./Databases/Padloc/padloc_all.hmm
+Pfam37A=./Databases/Pfam37A/Pfam-A.hmm
+Conjscan=./Databases/Conjscan/All_models.hmm
+AMRFinder=./Databases/AMRfinder/AMR.LIB
+PHROG=./Databases/PHROG/Phrogs_ETedit.hmm
+PGAP=./Databases/PGAP/PGAP.hmm
+CAZy=./Databases/CAZy/CAZy_ETedit.hmm
+COG=./Databases/COG/COG_ETedit.hmm
+VOG=./Databases/VOG/VOG_ETedit.hmm
+VOG_Vfam=./Databases/VOG/VFAM_ETedit.hmm
+PVOG=./Databases/PVOG/PVOG_ETedit.hmm
+TIGRFAM=./Databases/TIGRFAM/TIGRFAM.hmm
