@@ -49,4 +49,4 @@ try:
     os.system('tar -xzvf *.tar.gz')
 except Exception as e:
     print(str(e))
-    print('unable to extract directories. please use tar -xzvf <file name> to extract each file with the .tar.gz extension)
+    print('unable to extract directories. please use tar -xzvf <file name> to extract each file with the .tar.gz extension')
