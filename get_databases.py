@@ -37,7 +37,16 @@ def download_file_from_zenodo(doi_or_id, output_directory):
     else:
         print(f'Failed to retrieve record: {response.status_code}')
 
+
+
 # Example usage
 doi_or_id = '15724972'  # Replace with your DOI or record ID
 output_directory = './'  # Directory to save downloaded files
 download_file_from_zenodo(doi_or_id, output_directory)
+
+print('Extracting Directories')
+try:
+    os.system('tar -xzvf *.tar.gz')
+except Exception as e:
+    print(str(e))
+    print('unable to extract directories. please use tar -xzvf <file name> to extract each file with the .tar.gz extension)
