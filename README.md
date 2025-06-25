@@ -60,13 +60,16 @@ DiMER was developed to annotate the proteins from mobile genetic elements in pro
 
 __Installing MGE Databases__
 1. If you would like to use the Diamond (2.1.10) and HMMER (3.1b2) formatted databases tailored to MGE annotation that we used in our publication you can download them from your browser at https://zenodo.org/records/15724972 and then move them to your dimer directory. Or, use the included python script to fetch and untar the databases and associated files:
-
-- From within the dimer directory run (you will need ~25GB of storage available):
+- Activate your dimer environment if not already:
+ ```conda activate dimer```
+- Install the python package requests
+ ```conda install requests```
+- From within the dimer directory run (you will need ~25GB of storage available & install will take ~):
 ```
 python get_databases.py
 ```
 
-__Note 1__: If downloading from a browser remember to extract the tar archives ("tar -xzvf <file/folder_name>.tar.gz") after download to your dimer folder.
+__Note 1__: If downloading from a browser remember to extract the tar archives (```tar -xzvf <folder_name>.tar.gz```) after download to your dimer folder.
 
 __Note 2:__ If you decide you *don't* like using one or more of these databases you can add a '#' to the beginning of the line containing the path to the database in either 'hmmer3_db_paths.txt' or 'diamond_db_paths.txt' to exclude the database from being queried in your run.
 
