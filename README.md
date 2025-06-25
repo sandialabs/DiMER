@@ -1,8 +1,3 @@
-
-![dimer_logo](https://github.com/user-attachments/assets/1e0df282-d1af-481e-afea-045f0d17ac8d)
-![dimer_logo](https://github.com/user-attachments/assets/1e0df282-d1af-481e-afea-045f0d17ac8d)
-
-
 # DiMER
 DiMER is a modular protein annotation pipeline that allows the user to query their protein sequences against any number of BLAST and/or HMM databases and also allows the user to input any number of case-insensitive text strings they’d like to be preferentially avoided in the annotation of their submitted proteins (ex: "hypothetical protein").
 
