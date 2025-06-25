@@ -8,7 +8,7 @@ DiMER is a modular protein annotation pipeline that allows the user to query the
 - [Diamond](https://github.com/bbuchfink/diamond) (Tested with version 2.1.10)
 - Python Library: [Pandas](https://pandas.pydata.org/)
 
-- Note, the workflow of DiMER requires editing some files in this program. To do this, we recomend using a plain text editor. You can certainly use vim or nano from your terminal, but if you're not as comfortable using the command line, you may enjoy using an IDE like [VScode] instead.
+- Note, the workflow of DiMER requires editing some files in this program. To do this, we recomend using a plain text editor. You can certainly use vim or nano from your terminal, but if you're not as comfortable using the command line, you may enjoy using an IDE like [VScode](https://code.visualstudio.com/) instead.
 
 ## Getting Started
 
