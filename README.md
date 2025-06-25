@@ -45,7 +45,7 @@ conda install diamond=2.1.10
 ```
 - install the Python library Pandas
 ```
-conda install anaconda::pandas
+conda install pandas
 ```
 
 __Note:__ If you're new to conda, be aware of error messages during install. These errors are specific to your machine and may need to be addressed before these packages will install and work correctly.
