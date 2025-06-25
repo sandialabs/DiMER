@@ -41,7 +41,7 @@ conda install bioconda::hmmer=3.1b2
 ```
 - install Diamond
 ```
-conda install conda_forge::diamond=2.1.10
+conda install diamond=2.1.10
 ```
 - install the Python library Pandas
 ```
