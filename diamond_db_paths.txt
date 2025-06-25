@@ -10,6 +10,6 @@
 #Include Paths Below:
 ###################################################################################
 
-mobileOG=./Databases/MobileOG/mobileOG_db.dmnd
-VFDB=./Databases/VFDB/VFDB_setB_pro.dmnd
-ICEberg=./Databases/ICEberg3/ICEberg3_All_ETedit.dmnd
+mobileOG=./MGE_Databases/MobileOG/mobileOG_db.dmnd
+VFDB=./MGE_Databases/VFDB/VFDB_setB_pro.dmnd
+ICEberg=./MGE_Databases/ICEberg3/ICEberg3_All_ETedit.dmnd
