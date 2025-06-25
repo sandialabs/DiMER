@@ -11,15 +11,15 @@
 #Include Paths Below:
 ###################################################################################
 
-Padloc=./Databases/Padloc/padloc_all.hmm
-Pfam37A=./Databases/Pfam37A/Pfam-A.hmm
-Conjscan=./Databases/Conjscan/All_models.hmm
-AMRFinder=./Databases/AMRfinder/AMR.LIB
-PHROG=./Databases/PHROG/Phrogs_ETedit.hmm
-PGAP=./Databases/PGAP/PGAP.hmm
-CAZy=./Databases/CAZy/CAZy_ETedit.hmm
-COG=./Databases/COG/COG_ETedit.hmm
-VOG=./Databases/VOG/VOG_ETedit.hmm
-VOG_Vfam=./Databases/VOG/VFAM_ETedit.hmm
-PVOG=./Databases/PVOG/PVOG_ETedit.hmm
-TIGRFAM=./Databases/TIGRFAM/TIGRFAM.hmm
+Padloc=./MGE_Databases/Padloc/padloc_all.hmm
+Pfam37A=./MGE_Databases/Pfam37A/Pfam-A.hmm
+Conjscan=./MGE_Databases/Conjscan/All_models.hmm
+AMRFinder=./MGE_Databases/AMRfinder/AMR.LIB
+PHROG=./MGE_Databases/PHROG/Phrogs_ETedit.hmm
+PGAP=./MGE_Databases/PGAP/PGAP.hmm
+CAZy=./MGE_Databases/CAZy/CAZy_ETedit.hmm
+COG=./MGE_Databases/COG/COG_ETedit.hmm
+VOG=./MGE_Databases/VOG/VOG_ETedit.hmm
+VOG_Vfam=./MGE_Databases/VOG/VFAM_ETedit.hmm
+PVOG=./MGE_Databases/PVOG/PVOG_ETedit.hmm
+TIGRFAM=./MGE_Databases/TIGRFAM/TIGRFAM.hmm
