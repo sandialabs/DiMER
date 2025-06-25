@@ -44,9 +44,12 @@ doi_or_id = '15724972'  # Replace with your DOI or record ID
 output_directory = './'  # Directory to save downloaded files
 download_file_from_zenodo(doi_or_id, output_directory)
 
-print('Extracting Directories')
+script_directory=os.path.dirname(os.path.abspath(__file__))
+print(script_directory)
 try:
-    os.system('tar -xzvf *.tar.gz')
+    os.system('tar -xzvf ' + script_directory + '/' + 'MGE_Databases.tar.gz')
+    os.system('tar -xzvf ' + script_directory + '/' + 'Databases_key.tsv.tar.gz')
+    os.system('tar -xzvf ' + script_directory + '/' + 'Databases_key.pickle.tar.gz')
 except Exception as e:
     print(str(e))
     print('unable to extract directories. please use tar -xzvf <file name> to extract each file with the .tar.gz extension')
