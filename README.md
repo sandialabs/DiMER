@@ -189,6 +189,11 @@ Again, a new fasta file will be generated in your DiMER output folder called ```
 
     - Specify a file of placeholder annotations to selectively replace in your annotation run. This might be useful if you use DiMER for different projects or on different taxa with different common placeholder annotations. Only one entry should be made per each line in the file. No line should be empty. Default runs use "placeholders.txt". We recommend using this file as a template.
 
+## Errors and Troubleshooting
+Please feel free to reach out with questions or comments to eltorra@sandia.gov (additionally ellistorrance@gmail.com) or leave a comment on this repo. I'll update this section as users reach out to me with problems.
+
+__"DiMER Crashing Mid-Run"__
+If DiMER is crashing mid-run or ending with the error that it can't find certain files try adding the flag ```-restart``` as DiMER may have trouble if it encounters blank or corrupted files from previous runs.
 
 ## Citations
 
@@ -221,3 +226,6 @@ If using our formated MGE_Databases please cite the publications they come from:
 
 ## Copywrite
 Copyright 2025 National Technology & Engineering Solutions of Sandia, LLC (NTESS). Under the terms of Contract DE-NA0003525 with NTESS, the U.S. Government retains certain rights in this software.
+
+## Contact
+Please feel free to reach out with questions or comments to eltorra@sandia.gov (additionally ellistorrance@gmail.com) or leave a comment on this repo.
