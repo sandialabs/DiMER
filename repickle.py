@@ -1,6 +1,6 @@
 #script to repickle hmm_key.tsv for use in main.py after any alterations
 import pickle
-file = open('blast_and_hmm_key.tsv', 'r')
+file = open('Databases_key.tsv', 'r')
 dict1 = {}
 for line in file:
     name = line.split('\t')[0]
@@ -13,5 +13,5 @@ for line in file:
     else:
         dict1[name][one] = two +'\t' + three
 #print(dict1)
-with open('blast_and_hmm_summary.pickle', 'wb') as handle:
+with open('Databases_key.pickle', 'wb') as handle:
     pickle.dump(dict1, handle, protocol=pickle.HIGHEST_PROTOCOL)
