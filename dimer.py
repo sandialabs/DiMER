@@ -111,11 +111,11 @@ if "-h" in inputs:
     # Additional instructions
     print("############################################################################################")
     print("If you want to add new HMM or Diamond-formatted BLAST datasets: run `python repickle.py`")
-    print("after you've altered the `hmm_key.tsv` file to include new descriptions for HMM models you've")
+    print("after you've altered the `Databases_key.tsv` file to include new descriptions for HMM models you've")
     print("added. You will only need to do this once after altering this file. You will also need to")
     print("add the appropriate paths to your databases in the files `hmmer3_db_paths.txt` (HMM formatted")
     print("with HMMER3) and `diamond_db_paths.txt` (BLAST paths formatted with Diamond). Make sure the")
-    print("descriptors for the paths in these files match with those in `blast_and_hmm_key.tsv`.")
+    print("descriptors for the paths in these files match with those in the first column of `Databases_key.tsv`.")
     print("############################################################################################\n")
 
     print("(I hope you have a nice day)\n\n")
@@ -541,7 +541,7 @@ for d in hmmer_final.values():
 for d in blast_final.values():
     all_target_names.update(d.keys())
 
-with open('blast_and_hmm_summary.pickle', 'rb') as handle:
+with open('Databases_key.pickle', 'rb') as handle:
     b = pickle.load(handle)
 
 # Write to TSV file
@@ -832,3 +832,4 @@ if clean == 'TRUE':
 
 end = time.time()
 print('Time elapsed: ' + str(round((end - start) / 60, 2)) + ' minutes, ' + str(round(((end - start) / 3600), 3)) + ' hours', flush=True)
+
