@@ -369,7 +369,7 @@ for line in file:
             hmmer_todo[name] = ''
             path = line.strip(' ').strip('\n').split('=') [1]
             if path.startswith('.'):
-                path = path.replace('.', dimer_directory)
+                path = path.replace('.', dimer_directory, 1)
             hmmer_todo[name] += path
         except:
             pass
@@ -410,7 +410,7 @@ for line in file:
             blast_todo[name] = ''
             path = line.strip(' ').strip('\n').split('=') [1]
             if path.startswith('.'):
-                path = path.replace('.', dimer_directory)
+                path = path.replace('.', dimer_directory, 1)
             blast_todo[name] += path
         except:
             pass
