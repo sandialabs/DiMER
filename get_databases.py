@@ -50,6 +50,9 @@ try:
     os.system('tar -xzvf ' + script_directory + '/' + 'MGE_Databases.tar.gz')
     os.system('tar -xzvf ' + script_directory + '/' + 'Databases_key.tsv.tar.gz')
     os.system('tar -xzvf ' + script_directory + '/' + 'Databases_key.pickle.tar.gz')
+    os.system('rm ' + script_directory + '/' + 'MGE_Databases.tar.gz')
+    os.system('rm ' + script_directory + '/' + 'Databases_key.tsv.tar.gz')
+    os.system('rm ' + script_directory + '/' + 'Databases_key.pickle.tar.gz')
 except Exception as e:
     print(str(e))
     print('unable to extract directories. please use tar -xzvf <file name> to extract each file with the .tar.gz extension')
