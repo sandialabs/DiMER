@@ -173,7 +173,8 @@ Again, a new fasta file will be generated in your DiMER output folder called ```
 
 - ```-replace <force or gentle>```
 
-    - ```-replace gentle```: Replace hypothetical annotations in the original translated protein fasta file file with new annotations. "Gentle" will only replace if the annoation string contains a phrase from placeholder.txt. Do *not* use this mode on files that have not been previously annotated. 
+    - ```-replace gentle```: Replace hypothetical annotations in the original translated protein fasta file file with new annotations. "Gentle" will only replace if the annoation string contains a phrase from placeholder.txt. Do *not* use this mode on files that have not been previously annotated.
+            - __hot tip:__ this mode is most useful for determining whether the databases you're using with dimer are actually improving on your current annotation workflow. Check the stdout for infomration on what placeholder annotations were actually replaced during your DiMER run.     
     - ```-replace force```: Reannotates all sequences in your translated fasta file with the best scoring hit across all databases queried while selectively avoiding entries that match those in placeholders.txt whenever possible. 
     - Both options will create a new file with your original input file prefix followed by ".updated.faa" in the specified output dir.
 
