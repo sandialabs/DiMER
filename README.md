@@ -224,7 +224,7 @@ If using our formated MGE_Databases please cite the publications they come from:
 - Haft, D.H., J.D. Selengut, and O. White, The TIGRFAMs database of protein families. Nucleic Acids Res, 2003. 31(1): p. 371-3.
 
 
-## Copywrite
+## Copyright
 Copyright 2025 National Technology & Engineering Solutions of Sandia, LLC (NTESS). Under the terms of Contract DE-NA0003525 with NTESS, the U.S. Government retains certain rights in this software.
 
 ## Contact
