@@ -215,13 +215,19 @@ If using our formated MGE_Databases please cite the publications they come from:
 
 - Terzian, P., et al., PHROG: families of prokaryotic virus proteins clustered using remote homology. NAR Genom Bioinform, 2021. 3(3): p. lqab067.
 - Brown, C.L., et al., mobileOG-db: a Manually Curated Database of Protein Families Mediating the Life Cycle of Bacterial Mobile Genetic Elements. Appl Environ Microbiol, 2022. 88(18): p. e0099122.
+- Liu, B., et al., VFDB 2022: a general classification scheme for bacterial virulence factors. Nucleic Acids Res, 2022. 50(D1): p. D912-D917.
 - Wang, M., et al., ICEberg 3.0: functional categorization and analysis of the integrative and conjugative elements in bacteria. Nucleic Acids Res, 2024. 52(D1): p. D732-D737.
 - Payne, L.J., et al., Identification and classification of antiviral defence systems in bacteria and archaea with PADLOC reveals new system types. Nucleic Acids Res, 2021. 49(19): p. 10868-10878.
 - Mistry, J., et al., Pfam: The protein families database in 2021. Nucleic Acids Res, 2021. 49(D1): p. D412-D419.
 - Cury, J., et al., Identifying Conjugative Plasmids and Integrative Conjugative Elements with CONJscan. Methods Mol Biol, 2020. 2075: p. 265-283.
 - Feldgarden, M., et al., AMRFinderPlus and the Reference Gene Catalog facilitate examination of the genomic links among antimicrobial resistance, stress response, and virulence. Sci Rep, 2021. 11(1): p. 12728.
-- Trgovec-Greif, L., et al., VOGDB-Database of Virus Orthologous Groups. Viruses, 2024. 16(8).
+- Trgovec-Greif, L., et al., VOGDB-Database of Virus Orthologous Groups. Viruses, 2024. 16(8): p. 1191.
+- Grazziotin, A.L., E.V. Koonin, and D.M. Kristensen, Prokaryotic Virus Orthologous Groups (pVOGs): a resource for comparative genomics and protein family annotation. Nucleic Acids Res, 2017. 45(D1): p. D491-D498.
 - Haft, D.H., J.D. Selengut, and O. White, The TIGRFAMs database of protein families. Nucleic Acids Res, 2003. 31(1): p. 371-3.
+- Tatusova, T., et al., NCBI prokaryotic genome annotation pipeline. Nucleic Acids Res, 2016. 44(14): p. 6614-24.
+- Galperin, M.Y., et al., COG database update 2024. Nucleic Acids Res, 2025. 53(D1): p. D356-D363.
+- Cantarel, B.L., et al., The Carbohydrate-Active EnZymes database (CAZy): an expert resource for Glycogenomics. Nucleic Acids Res, 2009. 37(Database issue): p. D233-8.
+
 
 
 ## Copyright
