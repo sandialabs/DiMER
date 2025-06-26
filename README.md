@@ -187,7 +187,13 @@ Again, a new fasta file will be generated in your DiMER output folder called ```
 
 - ```-placeholders <path to file containing list of placeholder annotations>```
 
-    - Specify a file of placeholder annotations to selectively replace in your annotation run. This might be useful if you use DiMER for different projects or on different taxa with different common placeholder annotations. Only one entry should be made per each line in the file. No line should be empty. Default runs use "placeholders.txt". We recommend using this file as a template.
+    - Specify a file of placeholder annotations to selectively replace in your annotation run. This might be useful if you use DiMER for different projects or on different taxa with different common placeholder annotations. Only one entry should be made per each line in the file. No line should be empty. Default runs use "placeholders.txt". We recommend using this file as a template. Default: placeholders.txt
+
+- ```-hmm_paths <path to file>```
+    - Specify the path to a file containing paths to HMMER3-formatted HMM databases. Default: hmmer3_db_paths.txt
+
+- ```-blast_paths <path to file>```
+    - Specify the path to a file containing paths to Diamond-formatted BLAST databases. Default: diamond_db_paths.txt
 
 ## Errors and Troubleshooting
 Please feel free to reach out with questions or comments to eltorra@sandia.gov (additionally ellistorrance@gmail.com) or leave a comment on this repo. I'll update this section as users reach out to me with problems.
