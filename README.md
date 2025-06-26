@@ -64,7 +64,7 @@ __Installing MGE Databases__
  ```conda activate dimer```
 - Install the python package requests
  ```conda install requests```
-- From within the dimer directory run (you will need ~25GB of storage available & install will take ~):
+- From within the dimer directory run (you will need ~25GB of storage available & install will take ~10min):
 ```
 python get_databases.py
 ```
