@@ -541,7 +541,7 @@ for d in hmmer_final.values():
 for d in blast_final.values():
     all_target_names.update(d.keys())
 
-with open('Databases_key.pickle', 'rb') as handle:
+with open(dimer_directory + '/Databases_key.pickle', 'rb') as handle:
     b = pickle.load(handle)
 
 # Write to TSV file
