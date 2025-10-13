@@ -604,7 +604,7 @@ if replace == 'gentle':
     # Filter rows where column 2 contains 'hypothetical protein' (case insensitive) etc
 
     df.iloc[:, 1] = df.iloc[:, 1].fillna('').astype(str)
-    filtered_df = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False) | df.iloc[:, 1].isin(['NA', '', 'NaN'])] 
+    filtered_df = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False) | df.iloc[:, 1].isin(['NA', '', 'NaN', 'nan'])] 
     total_hyp_entry = (len(filtered_df))
 
     results = []
@@ -703,7 +703,7 @@ if replace == 'force' or '-best_hits' in inputs:
     try:
         # Filter out rows based on the hyp_syn_str or where the second column is 'NA', '', or 'NaN'
         df.iloc[:, 1] = df.iloc[:, 1].fillna('').astype(str)
-        filtered_df_OG = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False, na=False) | df.iloc[:, 1].isin(['NA', '', 'NaN'])]
+        filtered_df_OG = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False, na=False) | df.iloc[:, 1].isin(['NA', '', 'NaN', 'nan'])]
         total_hyp_entry = len(filtered_df_OG)
     except:
         total_hyp_entry = len(df)
