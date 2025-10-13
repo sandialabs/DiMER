@@ -186,7 +186,7 @@ Again, a new fasta file will be generated in your DiMER output folder called ```
 
     - Specify the number of additional cpus to use for HMMER - the default is zero. Must be an integer.
 
-- ```-placeholders <path to file containing list of placeholder annotations>```
+- ```-placeholder <path to file containing list of placeholder annotations>```
 
     - Specify a file of placeholder annotations to selectively replace in your annotation run. This might be useful if you use DiMER for different projects or on different taxa with different common placeholder annotations. Only one entry should be made per each line in the file. No line should be empty. Default runs use "placeholders.txt". We recommend using this file as a template. Default: placeholders.txt
 
