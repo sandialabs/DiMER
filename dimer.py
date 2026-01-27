@@ -1,3 +1,4 @@
+
 import os
 import sys
 import shutil
@@ -24,14 +25,14 @@ print("""
 |_____/ |_||_|  |_||_____||_|  \\_|
 """,flush=True)
 
-print('\nVersion 1.0', flush=True)
+print('\nVersion 1.1', flush=True)
 print("Today's Date: " + str(date.today()), flush=True)
 
 
 if "-h" in inputs:
     print("\n\n\n#############################################################################")
     print("DiMER")
-    print("Created Dec 2024. Last Updated 06/18/2025.")
+    print("Created Dec 2024. Last Updated 01/26/2026.")
     print("#############################################################################\n")
     
     # Tool description
@@ -67,7 +68,7 @@ if "-h" in inputs:
     print("        Please use a unique directory for this program.\n")
 
     print("   -unique_name <new output file name>")
-    print("        Specify a custom file name instead of `combined_output.tsv`.\n")
+    print("        Specify a custom file name instead of `combined_output.tsv` or an annotated output file with your original file prefix followed by `.updated.faa`.\n")
 
     print("   -best_hits")
     print("        Outputs a file called `best_hits.txt` (or `<unique_name>.best_hits.txt` if a unique name is specified).")
@@ -347,6 +348,7 @@ placeholder = dimer_directory + '/placeholders.txt'
 if "-placeholder" in inputs:
     i = inputs.index("-placeholder")
     placeholder = inputs[i+1]
+
 file = open(placeholder, 'r')
 hyp_syn_list = []
 for line in file:
@@ -604,7 +606,7 @@ if replace == 'gentle':
     # Filter rows where column 2 contains 'hypothetical protein' (case insensitive) etc
 
     df.iloc[:, 1] = df.iloc[:, 1].fillna('').astype(str)
-    filtered_df = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False) | df.iloc[:, 1].isin(['NA', '', 'NaN', 'nan'])] 
+    filtered_df = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False) | df.iloc[:, 1].isin(['NA','','NaN','nan'])] 
     total_hyp_entry = (len(filtered_df))
 
     results = []
@@ -668,7 +670,10 @@ if replace == 'gentle':
     fasta_file_path = cds_path 
 
     base_name = os.path.splitext(os.path.basename(fasta_file_path))[0] 
-    new_fasta_file = os.path.join(out_dir_path, f"{base_name}.updated.faa") 
+    new_fasta_file = os.path.join(out_dir_path, f"{base_name}.updated.faa")
+    if not unique_name == 'combined_output.tsv':
+        new_fasta_file = os.path.join(out_dir_path, f"{unique_name}.updated.faa")
+
 
     df = pd.read_csv(output_file, sep='\t')
     
@@ -703,7 +708,7 @@ if replace == 'force' or '-best_hits' in inputs:
     try:
         # Filter out rows based on the hyp_syn_str or where the second column is 'NA', '', or 'NaN'
         df.iloc[:, 1] = df.iloc[:, 1].fillna('').astype(str)
-        filtered_df_OG = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False, na=False) | df.iloc[:, 1].isin(['NA', '', 'NaN', 'nan'])]
+        filtered_df_OG = df[df.iloc[:, 1].str.contains(hyp_syn_str, case=False, na=False) | df.iloc[:, 1].isin(['NA', '', 'NaN','nan'])]
         total_hyp_entry = len(filtered_df_OG)
     except:
         total_hyp_entry = len(df)
@@ -832,4 +837,3 @@ if clean == 'TRUE':
 
 end = time.time()
 print('Time elapsed: ' + str(round((end - start) / 60, 2)) + ' minutes, ' + str(round(((end - start) / 3600), 3)) + ' hours', flush=True)
-
