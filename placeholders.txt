@@ -15,5 +15,6 @@ putative protein
 unannotated protein
 uncharacterized protein
 uncharacterized conserved protein
-na:Keyword | NA:Keyword
+na:Keyword
+NA:Keyword
 No Matches to Sequence Found
