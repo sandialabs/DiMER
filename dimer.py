@@ -804,7 +804,9 @@ if replace == 'force' or '-best_hits' in inputs:
         fasta_file_path = cds_path  
 
         base_name = os.path.splitext(os.path.basename(fasta_file_path))[0]  
-        new_fasta_file = os.path.join(out_dir_path, f"{base_name}.updated.faa") 
+        new_fasta_file = os.path.join(out_dir_path, f"{base_name}.updated.faa")
+        if not unique_name == 'combined_output.tsv':
+            new_fasta_file = os.path.join(out_dir_path, f"{unique_name}.updated.faa") 
 
         
         with open(fasta_file_path, 'r') as fasta_file:
@@ -837,3 +839,4 @@ if clean == 'TRUE':
 
 end = time.time()
 print('Time elapsed: ' + str(round((end - start) / 60, 2)) + ' minutes, ' + str(round(((end - start) / 3600), 3)) + ' hours', flush=True)
+
