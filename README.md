@@ -151,6 +151,13 @@ python dimer.py -in <path to translated proteins in fasta format> -out <output d
 ```
 Again, a new fasta file will be generated in your DiMER output folder called ```<your fasta file name>.updated.faa``` unless you specify a new name with the flag ```-unique_name```.
 
+### DiMER Test Run:
+A protein fasta file is included in the folder Test to test DiMER installed correctly. You can annotate it with:
+
+```
+python dimer.py -in <path to dimer folder>/Test/test.faa -out <path to dimer folder>/Test/dimer_results -replace gentle -restart
+```
+
 ### DiMER Flags and Options:
 
 
