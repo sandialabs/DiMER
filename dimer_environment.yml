@@ -1,0 +1,9 @@
+name: dimer
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - bioconda::hmmer=3.1b2
+  - bioconda::diamond=2.1.10
+  - anaconda::pandas
+  - requests
